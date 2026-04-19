@@ -1,0 +1,12 @@
+python-dotenv
+pandas
+pydantic
+streamlit
+requests
+rdflib
+owlready2
+networkx
+matplotlib
+plotly
+openpyxl
+google-genai
