@@ -18,8 +18,8 @@ and it writes back to the database — adding them to your live supplier network
 
 ## How it works
 
-1. User types a message — e.g. "Ashland MCC has a 10 day delay, find alternatives"
-2. System extracts the ingredient keyword (MCC, Gelatin, Vitamin E, Vitamin A, Calcium Carbonate)
+1. User types a message — e.g. "Nature Made company wants to find alternative suppliers for Vitamin E"
+2. System extracts the ingredient keyword (Microcrystalline Cellulose, Gelatin, Vitamin E, Vitamin A, Calcium Carbonate)
 3. DB query splits results into two groups:
    - Current Network — suppliers already approved in Supplier_Product
    - Discovered — suppliers in Supplier_Knowledge but not yet approved
@@ -68,10 +68,8 @@ streamlit run app.py
 
 ## What didn't work
 
-- Some DB suppliers are Tier 1 pass-throughs (e.g. Capsuline lists gelatin
-  but buys it, doesn't sell it) — the system flags these but can't auto-resolve them
 - Suppliers with no certification data score zero — needs a fallback enrichment path
-- Lead time and price data not in the DB — defaulted to constants
+- Lead time and price data not in the DB
 
 ## What we'd improve
 
