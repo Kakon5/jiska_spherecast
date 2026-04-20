@@ -13,8 +13,6 @@ discovered through external enrichment, scores and ranks them using TOPSIS
 across compliance and certification dimensions, then uses Gemini to explain
 the recommendation with evidence.
 
-You can also approve a discovered supplier directly in chat ("Yes, add Roquette")
-and it writes back to the database — adding them to your live supplier network.
 
 ## How it works
 
@@ -38,7 +36,6 @@ and it writes back to the database — adding them to your live supplier network
 - SQLite — provided Spherecast database
 - Google Gemini 2.5 Flash — recommendation reasoning
 - TOPSIS — multi-criteria supplier ranking
-- owlready2 / rdflib — ontology layer
 
 ## Files
 
@@ -63,7 +60,6 @@ streamlit run app.py
 
 - TOPSIS ranking produced defensible, explainable ordering
 - Gemini explanation quality was high when certification data was present
-- Supplier approval writing back to the DB made it feel like a real tool
 - Splitting current network vs discovered made the output immediately actionable
 
 ## What didn't work
