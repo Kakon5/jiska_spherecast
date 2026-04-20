@@ -77,3 +77,5 @@ streamlit run app.py
 - Add lead time and price as scoring dimensions
 - Extend ingredient coverage beyond the current 5
 - Wire Agnes API endpoint so recommendations feed directly into procurement execution
+
+## Demo Video: https://www.youtube.com/watch?v=5VmsDRllYoE
